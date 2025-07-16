@@ -2,8 +2,6 @@
 // admin/login.php
 require_once 'config/database.php';
 
-
-
 // Redirect if already logged in
 if (isLoggedIn()) {
     header('Location: pages.php');

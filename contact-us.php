@@ -15,6 +15,14 @@ $seo = $sections['seo'] ?? [];
 $form = $sections['form_section'] ?? [];
 $join = $sections['join_section'] ?? [];
 ?>
+<?php
+// Start session before any output
+session_start();
+
+// Include necessary files
+require_once 'admin/config/database.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 

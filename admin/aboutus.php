@@ -97,6 +97,14 @@ while ($row = $stmt->fetch()) {
     $sections[$row['section_name']] = json_decode($row['section_data'], true);
 }
 ?>
+<?php
+// Start session before any output
+session_start();
+
+// Include necessary files
+require_once 'admin/config/database.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

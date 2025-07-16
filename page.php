@@ -27,6 +27,14 @@ $meta_title = $page['meta_title'] ?: $page['title'];
 $meta_description = $page['meta_description'] ?: '';
 $meta_keywords = $page['meta_keywords'] ?: '';
 ?>
+<?php
+// Start session before any output
+session_start();
+
+// Include necessary files
+require_once 'admin/config/database.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -72,10 +80,7 @@ $meta_keywords = $page['meta_keywords'] ?: '';
 
 <body class="bg-white font-inter">
 
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQCF4VTL"
-      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+ 
 
   <?php include_once('includes/header.php'); ?>
 
