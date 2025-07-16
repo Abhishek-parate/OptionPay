@@ -1,0 +1,25 @@
+# Enable URL Rewriting
+RewriteEngine On
+
+# Set the base directory for your project
+RewriteBase /optionpaylive/
+
+# Allow form submissions to POST directly to the PHP file
+# This is now the primary rule for your form endpoints
+RewriteCond %{REQUEST_METHOD} POST
+RewriteRule ^demo-submit/?$ demo-submit.php [L]
+RewriteRule ^submit-form/?$ submit-form.php [L]
+
+
+# Internally rewrite clean URLs (like /book-a-demo) to their .php files
+# This does NOT use R=301, so it keeps the original request method intact.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{DOCUMENT_ROOT}/optionpaylive/$1.php -f
+RewriteRule ^(.+?)/?$ $1.php [L]
+
+
+# If no matching .php file is found, route to page.php for dynamic slugs
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([a-zA-Z0-9\-_]+)/?$ page.php?slug=$1 [L,QSA]

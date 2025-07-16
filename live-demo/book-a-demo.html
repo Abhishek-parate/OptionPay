@@ -1,0 +1,371 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <title>Book A Demo</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <!-- Favicon -->
+    <link href="img/favicon.svg" rel="icon">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&amp;display=swap"> 
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+ 
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- hcaptcha -->
+    <script src="https://hcaptcha.com/1/api.js" async defer></script>
+    
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PSJPGFP3');</script>
+    <!-- End Google Tag Manager -->
+</head>
+<body data-new-gr-c-s-check-loaded="14.1185.0" data-gr-ext-installed="">
+     <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PSJPGFP3"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only"></span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Navbar & Hero Start -->
+        <div class="top-div" id="navlist">
+            <section class="top-container container">
+                <ul class="top-nav">
+                <li><i class="fas fa-envelope"></i><a style="color: #fff;" href="mailto:sales@OptionPayindia.com">sales@OptionPayindia.com</a></li>
+                <li><i class="fas fa-phone-alt"></i><a class="text-white" href="tel:+91 9096877373">+91 9096877373</a></li>
+                </ul>
+            </section>
+        </div>
+        
+        <div class="container-xxl position-relative p-0" id="home">
+            
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0 sticky-top shadow-sm">
+                <a href="" class="navbar-brand p-0">
+                 <img src="img/logo-color.svg" alt="Logo">
+                </a>
+                <button class="navbar-toggler rounded-pill" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto py-0">
+                        <a href="https://OptionPayindia.com/live-demo/" class="nav-item nav-link">Dashboard</a>
+                        <a href="https://OptionPayindia.com/live-demo/" class="nav-item nav-link">Features</a>
+                        <a href="https://OptionPayindia.com/live-demo/" class="nav-item nav-link">Services</a>                        
+                        <a href="https://OptionPayindia.com/live-demo/" class="nav-item nav-link">Pricing</a>
+                        <a href="#con" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <a href="live-demo/book-a-demo.html" class="btn btn-light py-2 px-4 ms-3 d-none d-lg-block">Book a Live Demo</a>
+                </div>
+            </nav>
+            <div class="container-xxl py-sm-1 py-xs-1 py-lg-4 mb-5 ">
+        </div>
+        </div>
+        
+        <!-- Contact Start -->
+        <div class="container-xxl mb-3" id="con">
+		    <div class="container">
+                <div class="row ">
+					<div class="col-lg-6">
+<form method="post" id="form" autocomplete="on">
+    <!-- Form Fields -->
+    <div class="row g-3">
+        <div class="col-md-6">
+            <div class="form-floating">
+                <input type="text" class="form-control" id="name" placeholder="Your Name" name="name" required>
+                <label for="name">Your Name</label>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-floating">
+                <input type="email" class="form-control" id="email" placeholder="Your Email" name="email" required>
+                <label for="email">Your Email</label>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-floating">
+                <input type="text" pattern="[6789][0-9]{9}" inputmode="numeric" class="form-control" id="Mobile" placeholder="Mobile Number" minlength="10" maxlength="10" name="Mobile" required>
+                <label for="Mobile">Mobile Number</label>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-floating">
+                <input type="date" class="form-control" onfocus="disablePastDates()" id="date" name="date" placeholder="Date" required>
+                <label for="date">Date:</label>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="form-floating">
+                <textarea id="notes" class="form-control" name="notes" placeholder="Notes" maxlength="200" style="height: 100px" required></textarea>
+                <label for="notes">Key points to discuss:</label>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="form-floating">
+                <div class="h-captcha" data-sitekey="8ecc9058-b9fc-46ae-a320-846c89f295f6"></div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="form-floating">
+                <div id="res"></div>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="form-floating">
+                <button name="btn" class="btn btn-light rounded-pill py-3 w-100 px-5" type="submit">Book A Demo</button>
+            </div>
+        </div>
+    </div>
+</form>
+<script>
+    function disablePastDates() {
+        var today = new Date();
+        var dd = String(today.getDate()).padStart(2, '0');
+        var mm = String(today.getMonth() + 1).padStart(2, '0'); // January is 0!
+        var yyyy = today.getFullYear();
+
+        today = yyyy + '-' + mm + '-' + dd;
+        document.getElementById("date").setAttribute("min", today);
+    }
+
+function getUrlParams(url) {
+        let params = {};
+        let parser = new URL(url);
+        let queryString = parser.search;
+        let urlParams = new URLSearchParams(queryString);
+
+        urlParams.forEach((value, key) => {
+            params[key] = value;
+        });
+
+        return params;
+    }
+
+    document.getElementById('form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        const submitButton = document.querySelector('button[type="submit"]');
+        submitButton.textContent = "Submitting..."; // Change button text to "Submitting..."
+
+        const hCaptchaResponse = document.querySelector('[name="h-captcha-response"]').value;
+
+        if (!hCaptchaResponse) {
+            const responseDiv = document.getElementById('res');
+            responseDiv.className = 'error';
+            responseDiv.style.display = 'block';
+            responseDiv.innerText = 'Please complete the hCaptcha.';
+            submitButton.textContent = "Submit"; // Reset button text
+            return;
+        }
+
+        const formData = new FormData(document.getElementById('form'));
+        formData.append('h-captcha-response', hCaptchaResponse);
+
+        // Extract URL parameters
+        let urlParams = getUrlParams(window.location.href);
+
+        // Add URL parameters to form data
+        for (let [key, value] of Object.entries(urlParams)) {
+            formData.append(key, value);
+        }
+
+        // Convert FormData to JSON
+        const data = {
+            "Name": formData.get("name"),
+            "Email": formData.get("email"),
+            "Mobile": formData.get("Mobile"),
+            "Date": formData.get("date"),
+            "Please share anything that will help prepare for our meeting.": formData.get("notes"),
+            "campaign": formData.get("campaign") // Ensure the campaign name is sent here
+        };
+
+        const apiURL = 'https://teleduce.corefactors.in/lead/apiwebhook/4fd9ac93-4b74-4f33-9719-9558d9bea3b2/BookADemoLP/';
+        const sheetURL = 'https://script.google.com/macros/s/AKfycbwDpspcBxJWPhTKULHFY_OnRe5bSMCR7Bnr7o1vO38SxA2CWknlGO6TE6_zrlKkNz_Q/exec'; // Replace with your Google Apps Script URL
+
+        const responseDiv = document.getElementById('res');
+
+        // Function to handle success
+        const handleSuccess = () => {
+            responseDiv.className = 'success';
+            responseDiv.style.display = 'block';
+            responseDiv.innerText = 'Thank you for contacting us!';
+            document.getElementById('form').reset(); // Reset the form after successful submission
+            submitButton.textContent = "Submit"; // Reset button text
+
+            // Redirect to thankyou.php after a short delay
+            setTimeout(() => {
+                window.location.href = 'thankyou.php';
+            }, 3000); // Adjust the delay as needed
+        };
+
+        // Function to send data to the Google Sheets
+        const sendToSheet = () => {
+            fetch(sheetURL, {
+                method: 'POST',
+                body: new URLSearchParams(formData),
+                redirect: 'follow'
+            })
+            .then(res => res.text())
+            .catch(error => {
+                console.warn('Google Sheets Error:', error.message);
+            });
+        };
+
+        // Send data to the external API
+        fetch(apiURL, {
+            method: 'POST',
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(data),
+            redirect: 'follow'
+        })
+        .then(res => {
+            if (!res.ok) {
+                throw new Error('Network response was not ok ' + res.statusText);
+            }
+            return res.json();
+        })
+        .then(apiResponse => {
+            if (apiResponse.response_type === 'success') {
+                handleSuccess();
+                sendToSheet(); // Attempt to send to Google Sheets
+            } else {
+                responseDiv.className = 'error';
+                responseDiv.style.display = 'block';
+                responseDiv.innerText = 'Error: ' + apiResponse.response;
+                submitButton.textContent = "Submit"; // Reset button text
+            }
+        })
+        .catch(error => {
+            responseDiv.className = 'error';
+            responseDiv.style.display = 'block';
+            responseDiv.innerText = 'Error: ' + error.message;
+            handleSuccess(); // Show success message even if there is an error with the primary server
+            submitButton.textContent = "Submit"; // Reset button text
+        });
+    });
+</script>
+
+                    </div>
+					<div class="col-lg-6 contact_details">
+							<h5 class="mb-4 text-white h4">Contact Us</h5>
+							<div class="detail mb-3">
+									<p class="text-white">
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+										<span class="text-white">Address: </span> 307, tower - 1, World Trade Center, Kharadi, Pune - 411014.
+									</p>
+							</div>
+							<div class="detail mb-3">
+								<p class="text-white">
+									<i class="fa fa-phone" aria-hidden="true"></i>
+									<span class=" text-white">Phone: </span> for Sales <a href="tel:+91 9096877373" class="text-white">+91 9096877373</a>
+								</p>
+							</div>
+							<div class="detail mb-3">
+								<p class="text-white">
+									<i class="fa fa-envelope" aria-hidden="true"></i>
+									<span class=" text-white">Email: </span> <a href="mailto:sales@OptionPayindia.com" class="text-white">sales@OptionPayindia.com</a>
+								</p>
+							</div>
+							<hr>
+							<div class="social_icons">
+								<h4 class="text-white">Follow us on</h4>
+								<a href="https://www.facebook.com/OptionPayindia/"> <i class="fab fa-facebook-f"></i></a>
+								<a href="https://www.linkedin.com/company/OptionPayindia/"> <i class="fab fa-linkedin-in"></i></a>
+								<a href="https://www.youtube.com/@OptionPayindia"> <i class="fab fa-youtube"></i></a>
+								<a href="https://www.instagram.com/OptionPayindia.pvt.ltd/"> <i class="fab fa-instagram"></i></a>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+        <!-- Contact End -->
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-body footer wow fadeIn" data-wow-delay="0.1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-4">
+                        <img loading="lazy" src="img/logo.png" class="mb-4" alt="logo">
+                        <p>We don't just provide financial services but are responsible for millions of smiles of underserved families…</p>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <p class="section-title text-white h5 mb-4">Address<span></span></p>
+                        <p><i class="fa fa-map-marker-alt me-3"></i>307, tower - 1, World Trade Center, Kharadi, Pune - 411014.</p>
+                        <p href="tel:+91 9096877373"><i class="fa fa-phone-alt me-3"></i>+91 9096877373</p>
+                        <p href="mailto:sales@OptionPayindia.com"><i class="fa fa-envelope me-3"></i> sales@OptionPayindia.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/OptionPayindia/"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/OptionPayindia.pvt.ltd/"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.youtube.com/@OptionPayindia"> <i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/company/OptionPayindia/"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <p class="section-title text-white h5 mb-4">Quick Link<span></span></p>
+                        <a href="#about" class="btn btn-link">Dashboard</a>
+                        <a href="#features" class="btn btn-link">Features</a>
+                        <a href="#Services" class="btn btn-link">Services</a>                        
+                        <a href="#pricing" class="btn btn-link">Pricing</a>
+                        <a href="#con" class="btn btn-link">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container px-lg-5">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-white text-md-start mb-3 mb-md-0">© 2024, OptionPay India. All Rights Reserved.</div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <p><img class="alignnone wp-image-22760" src="https://venko.in/wp-content/uploads/2024/03/indifly_footer_logo.svg" alt="" width="21" height="21"> <a href="https://indifly.in/" style="color: #fff;" rel="noopener">A Venture of Indifly Group of Companies</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top" style="display: none;"><i class="bi bi-arrow-up"></i></a>
+        <a href="https://wa.me/919096877373" class="float"><i class="fa-brands fa-whatsapp my-float"></i> </a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script defer="" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script defer="" src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" async=""></script>
+    <script defer="" src="lib/wow/wow.min.js"></script>
+    <script defer="" src="lib/easing/easing.min.js"></script>
+    <script defer="" src="lib/waypoints/waypoints.min.js"></script>
+    <script defer="" src="lib/counterup/counterup.min.js"></script>
+    <script defer="" src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js" crossorigin="anonymous"></script>
+    <!-- Template Javascript -->
+    <script defer="" src="js/main.js"></script>
+    
+
+    <script defer="" type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script defer="" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+
+</body></html>
