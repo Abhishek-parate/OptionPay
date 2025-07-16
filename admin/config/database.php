@@ -1,5 +1,6 @@
 <?php
 // Database configuration
+// admin/config/database.php
 define('DB_HOST', 'localhost');
 define('DB_NAME', 'optionpay_cms');
 define('DB_USER', 'root');

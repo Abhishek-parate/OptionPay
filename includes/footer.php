@@ -25,7 +25,7 @@ try {
             <div>
                 <div class="flex items-center mb-4">
                     <img src="./assets/logo/White + Black.png"
-                        class="h-20 w-auto sm:h-10 md:h-12 lg:h-14 max-w-[200px] sm:max-w-[200px] md:max-w-[220px]"
+                        class="max-w-[200px] sm:max-w-[200px] md:max-w-[220px]"
                         alt="Option Pay Logo">
                     </div>
                 <h2 class="text-white lg:text-xl text-base font-semibold max-w-lg">Your Partner in Making Digital

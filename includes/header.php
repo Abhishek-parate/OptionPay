@@ -4,9 +4,9 @@
         <!-- Logo -->
         <div class="w-2/7 flex-shrink-0">
             <a href="index">
-                <img src="./assets/logo/Option Pay Centre & Option Black.png" 
-     class="h-20 w-auto sm:h-10 md:h-12 lg:h-14 max-w-[180px] sm:max-w-[200px] md:max-w-[220px]" 
-     alt="Option Pay Logo">
+                <img src="./assets/logo/OptionPay-logo.png" 
+     class="" 
+     alt="Option Pay Logo"> 
             </a>
         </div>
         <!-- Desktop Navigation -->
@@ -550,7 +550,7 @@
     class="fixed inset-0 z-40 bg-white p-4 transform translate-x-full transition-transform duration-300 overflow-y-auto">
     <div class="flex justify-between items-center mb-2 z-50">
         <a href="index">
-            <img src="./assets/logo/Option Pay Centre & Option Black.png" 
+            <img src="./assets/logo/OptionPay-logo.png" 
      class="h-20 w-auto max-w-[140px] sm:h-8 sm:max-w-[160px]" 
      alt="Option Pay Logo">
         </a>
